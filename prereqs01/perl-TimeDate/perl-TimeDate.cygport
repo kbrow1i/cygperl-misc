@@ -1,0 +1,26 @@
+NAME="perl-TimeDate"
+VERSION="2.30"
+RELEASE="3"
+CPAN_AUTHOR="GBARR"
+DESCRIPTION="Perl distribution TimeDate, providing Perl modules:
+Date::Format Date::Format::Generic Date::Language Date::Language::Afar
+Date::Language::Amharic Date::Language::Austrian Date::Language::Brazilian
+Date::Language::Bulgarian Date::Language::Chinese
+Date::Language::Chinese_GB Date::Language::Czech Date::Language::Danish
+Date::Language::Dutch Date::Language::English Date::Language::Finnish
+Date::Language::French Date::Language::Gedeo Date::Language::German
+Date::Language::Greek Date::Language::Hungarian Date::Language::Icelandic
+Date::Language::Italian Date::Language::Norwegian Date::Language::Oromo
+Date::Language::Romanian Date::Language::Russian
+Date::Language::Russian_cp1251 Date::Language::Russian_koi8r
+Date::Language::Sidama Date::Language::Somali Date::Language::Spanish
+Date::Language::Swedish Date::Language::Tigrinya
+Date::Language::TigrinyaEritrean Date::Language::TigrinyaEthiopian
+Date::Language::Turkish Date::Parse Time::Zone.
+
+Date formating subroutines."
+
+DIFF_EXCLUDES="MYMETA.*"
+
+NO_PERL_DEPS=1
+inherit perl
