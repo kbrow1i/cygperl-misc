@@ -1,0 +1,9 @@
+*~
+*.tar.gz
+*.tgz
+*.noarch/
+*.i686/
+*.x86_64/
+*.log
+build_failures.txt
+test_failures.txt

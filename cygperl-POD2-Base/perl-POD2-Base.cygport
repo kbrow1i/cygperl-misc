@@ -1,0 +1,13 @@
+NAME="perl-POD2-Base"
+VERSION="0.043"
+RELEASE=4
+CPAN_AUTHOR="FERREIRA"
+DESCRIPTION="Perl distribution POD2-Base, providing Perl modules:
+POD2::Base.
+
+Base module for translations of Perl documentation."
+
+DIFF_EXCLUDES="MYMETA.*"
+
+NO_PERL_DEPS=1
+inherit perl

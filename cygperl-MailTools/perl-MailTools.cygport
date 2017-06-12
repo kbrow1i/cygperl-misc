@@ -1,0 +1,29 @@
+_ml="Date::Format Date::Parse"
+inform " Build of perl-MailTools requires"
+inform "   $_ml"
+for _m in $_ml; do
+  check_perl_module $_m || warning " Perl module $_m is missing from build environment."
+done
+if [ "x$cygport_no_error" == "x" ] && ! check_perl_module $_ml; then
+  error " At least one required perl module is missing."
+fi
+NAME="perl-MailTools"
+VERSION="2.18"
+RELEASE="2"
+CPAN_AUTHOR="MARKOV"
+DESCRIPTION="Perl distribution MailTools, providing Perl modules:
+Mail::Address Mail::Cap Mail::Field Mail::Field::AddrList Mail::Field::Date
+Mail::Field::Generic Mail::Filter Mail::Header Mail::Internet Mail::Mailer
+Mail::Mailer::qmail Mail::Mailer::rfc822 Mail::Mailer::sendmail
+Mail::Mailer::smtp Mail::Mailer::smtp::pipe Mail::Mailer::smtps
+Mail::Mailer::smtps::pipe Mail::Mailer::testfile
+Mail::Mailer::testfile::pipe Mail::Send Mail::Util.
+
+Various e-mail related modules."
+
+ARCH=noarch
+DIFF_EXCLUDES="MYMETA.* *.ppd"
+
+NO_PERL_DEPS=1
+REQUIRES="perl-TimeDate"
+inherit perl

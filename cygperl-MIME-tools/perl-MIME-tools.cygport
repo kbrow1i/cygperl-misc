@@ -1,0 +1,33 @@
+_ml="Mail::Field Mail::Header Mail::Internet Test::Deep"
+inform " Build of perl-MIME-tools requires"
+inform "   $_ml"
+for _m in $_ml; do
+  check_perl_module $_m || warning " Perl module $_m is missing from build environment."
+done
+if [ "x$cygport_no_error" == "x" ] && ! check_perl_module $_ml; then
+  error " At least one required perl module is missing."
+fi
+NAME="perl-MIME-tools"
+VERSION="5.508"
+RELEASE="2"
+CPAN_AUTHOR="DSKOLL"
+DESCRIPTION="Perl distribution MIME-tools, providing Perl modules:
+MIME::Body MIME::Body::File MIME::Body::InCore MIME::Body::Scalar
+MIME::Decoder MIME::Decoder::Base64 MIME::Decoder::BinHex
+MIME::Decoder::Binary MIME::Decoder::Gzip64 MIME::Decoder::NBit
+MIME::Decoder::QuotedPrint MIME::Decoder::UU MIME::Entity
+MIME::Field::ConTraEnc MIME::Field::ContDisp MIME::Field::ContType
+MIME::Field::ParamVal MIME::Head MIME::Parser MIME::Parser::FileInto
+MIME::Parser::FileUnder MIME::Parser::Filer MIME::Parser::Reader
+MIME::Parser::Results MIME::Tools MIME::WordDecoder
+MIME::WordDecoder::ISO_8859 MIME::WordDecoder::US_ASCII
+MIME::WordDecoder::UTF_8 MIME::Words.
+
+Tools to manipulate MIME messages."
+
+ARCH=noarch
+DIFF_EXCLUDES="MYMETA.*"
+
+NO_PERL_DEPS=1
+REQUIRES="perl-MailTools"
+inherit perl

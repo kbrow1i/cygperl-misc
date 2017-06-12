@@ -1,0 +1,23 @@
+_ml="Encode::EUCJPASCII Encode::HanExtra Encode::JISX0213 POD2::Base"
+inform " Build of perl-MIME-Charset requires"
+inform "   $_ml"
+for _m in $_ml; do
+  check_perl_module $_m || warning " Perl module $_m is missing from build environment."
+done
+if [ "x$cygport_no_error" == "x" ] && ! check_perl_module $_ml; then
+  error " At least one required perl module is missing."
+fi
+NAME="perl-MIME-Charset"
+VERSION="1.012.2"
+RELEASE=3
+CPAN_AUTHOR="NEZUMI"
+DESCRIPTION="Perl distribution MIME-Charset, providing Perl modules:
+MIME::Charset.
+
+Charset Information for MIME."
+
+ARCH=noarch
+DIFF_EXCLUDES="MYMETA.*"
+
+NO_PERL_DEPS=1
+inherit perl
