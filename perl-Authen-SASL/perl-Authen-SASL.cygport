@@ -1,0 +1,17 @@
+CPAN_AUTHOR=gbarr
+inherit perl
+
+NAME="perl-Authen-SASL"
+VERSION=2.16
+RELEASE=3
+CATEGORY="Perl"
+SUMMARY="Perl distribution Authen-SASL"
+DESCRIPTION="SASL is a generic mechanism for authentication used by several
+network protocols. Authen::SASL provides an implementation framework that all
+protocols should be able to share."
+
+ARCH=noarch
+
+REQUIRES="perl-Authen-SASL-XS"
+
+DIFF_EXCLUDES="MYMETA.*"

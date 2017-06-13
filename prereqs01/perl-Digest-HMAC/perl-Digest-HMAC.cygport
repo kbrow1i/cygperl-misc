@@ -1,0 +1,13 @@
+NAME="perl-Digest-HMAC"
+VERSION="1.03"
+RELEASE="6"
+CPAN_AUTHOR="GAAS"
+DESCRIPTION="Perl distribution Digest-HMAC, providing Perl modules:
+Digest::HMAC Digest::HMAC_MD5 Digest::HMAC_SHA1.
+
+Keyed-Hashing for Message Authentication."
+
+DIFF_EXCLUDES="MYMETA.*"
+
+NO_PERL_DEPS=1
+inherit perl
