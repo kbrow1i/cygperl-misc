@@ -1,0 +1,24 @@
+_ml="IO::Socket::SSL"
+inform " Build of perl-Net-SMTP-SSL requires"
+inform "   $_ml"
+for _m in $_ml; do
+  check_perl_module $_m || warning " Perl module $_m is missing from build environment."
+done
+if [ "x$cygport_no_error" == "x" ] && ! check_perl_module $_ml; then
+  error " At least one required perl module is missing."
+fi
+NAME="perl-Net-SMTP-SSL"
+VERSION="1.04"
+RELEASE="2"
+CPAN_AUTHOR="RJBS"
+DESCRIPTION="Perl distribution Net-SMTP-SSL, providing Perl modules:
+Net::SMTP::SSL.
+
+SSL support for Net::SMTP."
+
+ARCH=noarch
+DIFF_EXCLUDES="MYMETA.*"
+
+NO_PERL_DEPS=1
+REQUIRES="perl-IO-Socket-SSL"
+inherit perl
