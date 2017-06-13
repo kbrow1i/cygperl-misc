@@ -41,6 +41,7 @@ install() {
 mods="
          perl-POD2-Base
          perl-TimeDate
+         perl-Digest-HMAC
 "
 
 rm -f build_failures.txt test_failures.txt

@@ -41,6 +41,7 @@ install() {
 mods="
          perl-MailTools
          perl-MIME-Charset
+         perl-Authen-SASL
 "
 
 rm -f build_failures.txt test_failures.txt
