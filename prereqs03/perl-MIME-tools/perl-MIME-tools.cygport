@@ -9,7 +9,7 @@ if [ "x$cygport_no_error" == "x" ] && ! check_perl_module $_ml; then
 fi
 NAME="perl-MIME-tools"
 VERSION="5.508"
-RELEASE="2"
+RELEASE=3
 CPAN_AUTHOR="DSKOLL"
 DESCRIPTION="Perl distribution MIME-tools, providing Perl modules:
 MIME::Body MIME::Body::File MIME::Body::InCore MIME::Body::Scalar

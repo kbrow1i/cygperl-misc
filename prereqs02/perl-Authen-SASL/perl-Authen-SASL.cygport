@@ -3,7 +3,7 @@ inherit perl
 
 NAME="perl-Authen-SASL"
 VERSION=2.16
-RELEASE=3
+RELEASE=4
 CATEGORY="Perl"
 SUMMARY="Perl distribution Authen-SASL"
 DESCRIPTION="SASL is a generic mechanism for authentication used by several

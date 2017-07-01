@@ -9,7 +9,7 @@ if [ "x$cygport_no_error" == "x" ] && ! check_perl_module $_ml; then
 fi
 NAME="perl-Net-SMTP-SSL"
 VERSION="1.04"
-RELEASE="2"
+RELEASE=3
 CPAN_AUTHOR="RJBS"
 DESCRIPTION="Perl distribution Net-SMTP-SSL, providing Perl modules:
 Net::SMTP::SSL.

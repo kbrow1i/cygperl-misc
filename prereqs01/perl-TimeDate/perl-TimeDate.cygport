@@ -1,6 +1,6 @@
 NAME="perl-TimeDate"
 VERSION="2.30"
-RELEASE="3"
+RELEASE=4
 CPAN_AUTHOR="GBARR"
 DESCRIPTION="Perl distribution TimeDate, providing Perl modules:
 Date::Format Date::Format::Generic Date::Language Date::Language::Afar

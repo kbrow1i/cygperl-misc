@@ -9,7 +9,7 @@ if [ "x$cygport_no_error" == "x" ] && ! check_perl_module $_ml; then
 fi
 NAME="perl-MIME-Charset"
 VERSION="1.012.2"
-RELEASE=3
+RELEASE=4
 CPAN_AUTHOR="NEZUMI"
 DESCRIPTION="Perl distribution MIME-Charset, providing Perl modules:
 MIME::Charset.

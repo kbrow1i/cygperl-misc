@@ -1,6 +1,6 @@
 NAME="perl-POD2-Base"
 VERSION="0.043"
-RELEASE=4
+RELEASE=5
 CPAN_AUTHOR="FERREIRA"
 DESCRIPTION="Perl distribution POD2-Base, providing Perl modules:
 POD2::Base.

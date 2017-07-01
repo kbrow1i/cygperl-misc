@@ -9,7 +9,7 @@ if [ "x$cygport_no_error" == "x" ] && ! check_perl_module $_ml; then
 fi
 NAME="perl-MailTools"
 VERSION="2.18"
-RELEASE="2"
+RELEASE=3
 CPAN_AUTHOR="MARKOV"
 DESCRIPTION="Perl distribution MailTools, providing Perl modules:
 Mail::Address Mail::Cap Mail::Field Mail::Field::AddrList Mail::Field::Date
