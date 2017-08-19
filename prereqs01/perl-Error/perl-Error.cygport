@@ -1,0 +1,23 @@
+_ml="Module::Build"
+inform " Build of perl-Error requires"
+inform "   $_ml"
+for _m in $_ml; do
+  check_perl_module $_m || warning " Perl module $_m is missing from build environment."
+done
+if [ "x$cygport_no_error" == "x" ] && ! check_perl_module $_ml; then
+  error " At least one required perl module is missing."
+fi
+NAME="perl-Error"
+VERSION="0.17025"
+RELEASE="2"
+CPAN_AUTHOR="SHLOMIF"
+DESCRIPTION="Perl distribution Error, providing Perl modules:
+Error Error::Simple Error::WarnDie Error::subs.
+
+Error/exception handling in an OO-ish way."
+
+ARCH=noarch
+DIFF_EXCLUDES="MYMETA.*"
+
+NO_PERL_DEPS=1
+inherit perl
