@@ -43,6 +43,7 @@ mods="
          perl-TimeDate
          perl-Digest-HMAC
          perl-Net-SMTP-SSL
+         perl-Error
 "
 
 rm -f build_failures.txt test_failures.txt
